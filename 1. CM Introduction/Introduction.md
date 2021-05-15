@@ -1,5 +1,5 @@
 ## #########################
-## Introduction to Configuration Management Concepts
+## Configuration Management Concepts
 ## #########################
 
 ### Keywords

@@ -1,14 +1,21 @@
-## configuration Management using Chef, Puppet and Ansible
 
-### Community Link: https://community.simplilearn.com/threads/caltech-pg-do-feb-2021-cohort.64648/
+## [Simplilearn Forum](https://community.simplilearn.com/threads/caltech-pg-do-feb-2021-cohort.64648/)
+## Configuration Management
+***Configuration Management using Chef Puppet and Ansible***
 
 **Agenda**
 
-    Chef - 3
-    Puppet - 3
-    Ansible - 3
-    AWS Fundamentals - 1
-    Terraform - 1
-    Project - 1
+    15 May    - Introduction and Lab Walkthrough
+    16 May    - Chef
+    22 May    - Chef
+    23 May    - Chef
+    29 May    - Puppet
+    30 May    - Puppet
+    05 June   - Puppet
+    06 June   - Ansible
+    12 June   - Ansible
+    13 June   - Ansible / AWS Fundamentals
+    19 June   - Terraform
+    20 June   - Project / QnA / GoodBye!
 
 

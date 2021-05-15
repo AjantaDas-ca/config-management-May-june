@@ -65,7 +65,7 @@
         - ARM Templates (Azure) | JSON
         - Heat Templates (OpenStack) | DSL
 
-    - Configuration Management (Managing/Maintaing the State)
+    - Configuration Management (Managing/Maintaning the State)
         - Ansible
         - Chef
         - Puppet

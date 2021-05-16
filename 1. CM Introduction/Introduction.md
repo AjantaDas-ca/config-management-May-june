@@ -16,6 +16,13 @@
     - Ansible --> YAML
     - Cloudformation --> JSON/YAML
     - Jenkins --> Groovy
+
+- Configuration Items
+    - File, folders
+    - Softwares, applications
+    - ports, groups
+    - Permissions
+    - Network configurations
   
 ### Agenda
     - Introduction
@@ -44,8 +51,8 @@
     - Windows
         - Putty
         - MobaxTerm
+        - Termius
         - WSL
-        - Cygwin
 
 ### Text Editor
     - VS Code
@@ -65,7 +72,7 @@
         - ARM Templates (Azure) | JSON
         - Heat Templates (OpenStack) | DSL
 
-    - Configuration Management (Managing/Maintaning the State)
+    - Configuration Management (Managing/Maintaining the State)
         - Ansible
         - Chef
         - Puppet
@@ -73,6 +80,9 @@
         - BladeLogic
         - Powershell DSC
         - SaltStack
+
+
+Packages / Code files  / Functions
 
 
 

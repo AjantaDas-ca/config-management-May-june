@@ -8,7 +8,7 @@
 - Password-less Authentication
 - Configuration Drift
 - Out-of-Band Changes
-- Desired State Configuration
+- Desired State Configuration (Policy Files)
 - Domain Specific Language
     - Terraform --> HCL
     - Chef --> DSL
@@ -32,6 +32,10 @@
     - SL Lab walkthrough
     - Alternate Lab setup (AWS / Azure / Digital Ocean)
 
+### Timeline:
+    - Puppet  --> 2005
+    - Chef    --> 2009
+    - Ansible --> 2012
 ### 3 ways to talk to AWS:
     - Console (GUI)
     - AWS CLI (Command Line)

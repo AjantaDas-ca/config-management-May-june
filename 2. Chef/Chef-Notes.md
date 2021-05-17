@@ -3,7 +3,7 @@
 ### #########################
 
 ### Agenda
-```
+
 - [x] Introduction
 - [x] Installation and Configuration
     - [x] Chef Server installation
@@ -12,7 +12,7 @@
 - [ ] Understanding and Writing your first recipe
 - [ ] 
 
-```
+
 ### Chef EcoSystem
     - Chef Automate
         - Chef Infra

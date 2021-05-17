@@ -31,6 +31,7 @@
 
 **myapacherecipe.rb**
 
+```
     package 'httpd' do 
       action: install
     end
@@ -45,7 +46,7 @@
       action: start
     end
 
-
+```
 
 ### Chef Server Installation
 

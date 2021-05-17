@@ -44,42 +44,47 @@
 
 ### Sample Chef Recipe to install and configure Apache
 
-> **myapacherecipe.rb**
+**myapacherecipe.rb**
 
 ```
-    package 'httpd' do 
-      action: install
-    end
+package 'httpd' do 
+  action: install
+end
 
-    file '/var/www/html/index.html' do
-      content 'some content'
-      mode '0755'
-      owner 'apache'
-    end
+file '/var/www/html/index.html' do
+  content 'some content'
+  mode '0755'
+  owner 'apache'
+end
 
-    service 'httpd' do
-      action: start
-    end
+service 'httpd' do
+  action: start
+end
 
 ```
 
 ### Chef Server Installation
+```
+sudo chef-server-ctl user-create sk12k Chef Admin chefadmin@sl.com 'Passw0rd' --filename ~/.chef/sk12k.pem
 
-    sudo chef-server-ctl user-create sk12k Chef Admin chefadmin@sl.com 'Passw0rd' --filename ~/.chef/sk12k.pem
 
-
-    sudo chef-server-ctl org-create sl-org "Simplilearn DevOps" --association_user sk12k --filename sl-org.pem
-
+sudo chef-server-ctl org-create sl-org "Simplilearn DevOps" --association_user sk12k --filename sl-org.pem
+```
 
 ### Chef Workstation
-    - Installation
-        - https://downloads.chef.io/tools/workstation/current
-    - Knife Configuration
-        - Download config.rb from Chef Org (Web UI) and place it in "chef-repo"
+```
+- Installation
+    - https://downloads.chef.io/tools/workstation/current
+- Knife Configuration
+    - Download config.rb from Chef Org (Web UI) and place it in "chef-repo"
 
-
+```
 
 
 ### References
+```
+- https://downloads.chef.io/
 
-    - https://downloads.chef.io/
+
+
+```

@@ -12,6 +12,7 @@
 
 
 **Linux Family**
+
     - Redhat Family (RPM / Yum)
         - RHEL
         - CentOS
@@ -26,8 +27,9 @@
         - Debian
 
 
-## Sample Chef Recipe to install and configure Apache
-## myapacherecipe.rb
+### Sample Chef Recipe to install and configure Apache
+
+**myapacherecipe.rb**
 
     package 'httpd' do 
       action: install
@@ -45,6 +47,19 @@
 
 
 
+### Chef Server Installation
+
+    sudo chef-server-ctl user-create sk12k Chef Admin chefadmin@sl.com 'Passw0rd' --filename ~/.chef/sk12k.pem
+
+
+    sudo chef-server-ctl org-create sl-org "Simplilearn DevOps" --association_user sk12k --filename sl-org.pem
+
+
+### Chef Workstation
+    - Installation
+        - https://downloads.chef.io/tools/workstation/current
+    - Knife Configuration
+        - Download config.rb from Chef Org (Web UI) and place it in "chef-repo"
 
 
 

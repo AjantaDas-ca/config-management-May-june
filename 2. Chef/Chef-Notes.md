@@ -29,7 +29,7 @@
 
 ### Sample Chef Recipe to install and configure Apache
 
-**myapacherecipe.rb**
+> **myapacherecipe.rb**
 
 ```
     package 'httpd' do 

@@ -2,7 +2,17 @@
 ### Chef
 ### #########################
 
+### Agenda
+```
+- [x] Introduction
+- [x] Installation and Configuration
+    - [x] Chef Server installation
+    - [ ] Chef Workstation
+    - [ ] Chef Node Bootstrapping
+- [ ] Understanding and Writing your first recipe
+- [ ] 
 
+```
 ### Chef EcoSystem
     - Chef Automate
         - Chef Infra

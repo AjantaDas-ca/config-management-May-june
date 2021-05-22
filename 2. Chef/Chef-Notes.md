@@ -194,8 +194,9 @@ Validation:
 
 ```
 
-Assignment
-1. Bootstrap an AWS node from Simplilearn lab to your manage.chef.io account.
+**Assignment**
+
+    1. Bootstrap an AWS node from Simplilearn lab to your manage.chef.io account.
 
 
 

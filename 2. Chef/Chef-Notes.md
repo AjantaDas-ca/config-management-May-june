@@ -80,11 +80,37 @@ sudo chef-server-ctl org-create sl-org "Simplilearn DevOps" --association_user s
 
 ```
 
+Test Kitchen Drivers
+- Vagrant ---> virtualbox --> 
+- 
+
+### Get an alternate Chef environment (Class Activity)
+
+```
+- Register and create an Account on: https://manage.chef.io/
+- Configure your Laptop as Chef workstation
+    - Configure Knife using Starter Kit
+        - Download Starter kit from Chef UI (Administrator page)
+        - Unzip the kit to get "chef-repo"
+    - Install ChefDK
+        - https://downloads.chef.io/tools/workstation
+        - Download the package as per your OS and complete the installation process
+    - Validate
+        - chef -v
+        - Naviagate to "chef-repo" and run "knife node list" or knife cookbook list"
+- Bootstrap DigitalOcean and/or AWS Nodes
+
+
+```
+
+
+
 
 ### References
 ```
 - https://downloads.chef.io/
-
+- https://kitchen.ci/docs/getting-started/introduction/
+- https://community.chef.io/tools/chef-inspec/
 
 
 ```

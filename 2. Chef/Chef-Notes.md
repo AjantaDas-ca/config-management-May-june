@@ -139,7 +139,10 @@ systemctl restart sshd
 - server patching and maintenance
 ```
 ### Sample recipes and resources
+
 ```
+**Install a Package**
+
 vi install.rb
 
 execute "apt-get update" do
@@ -153,6 +156,61 @@ end
 run the recipe locally using the following command:
 chef-apply install.rb
 ```
+
+**Apache**
+```
+1. Install apache package (apache2 or httpd)
+2. Create a sample index.html file (/var/www/html/index.html)
+3. Start and enable the service
+
+vi apache.rb
+
+## update apt-get
+execute "apt-getupdate" do
+  command "sudo apt-get update"
+end
+
+## Install apache2 package
+package 'apache2' do
+  action :install
+end
+
+## Create landing page"
+file '/var/www/html/index.html' do
+  content '<html>Hey there! My first chef recipe</html>'
+  mode '0755'
+end
+
+## Start and enable the service
+service 'apache2' do
+ action [:start, :enable]
+end
+
+Validation:
+- open page in web browser
+- curl localhost
+- check service status on node
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package 'apache2' do
+    action :install
+end
+
 
 ### References
 ```

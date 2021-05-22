@@ -7,12 +7,12 @@
 - [x] Introduction
 - [x] Installation and Configuration
     - [x] Chef Server installation
-    - [ ] Knife configuration [Chef Workstation]
-    - [ ] Bootstrapping a Chef Node
-- [ ] Understanding and Writing your first recipe
-- [ ] Talking to Chef Server via Knife [Knife commands]
+    - [x] Knife configuration [Chef Workstation]
+    - [x] Bootstrapping a Chef Node
+- [x] Understanding and Writing your first recipe
+- [x] Talking to Chef Server via Knife [Knife commands]
+- [x] Common Resources
 - [ ] Writing and Working with Cookbooks
-- [ ] Common Resources
 - [ ] Roles and Runlists
 - [ ] Environments
 - [ ] Databags

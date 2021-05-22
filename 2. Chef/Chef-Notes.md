@@ -128,6 +128,32 @@ systemctl restart sshd
 
 ```
 
+### Common Sysadmin tasks 
+```
+- Package management
+- File/folder management
+- user management
+- service management
+- security setting and updates
+- network configuration
+- server patching and maintenance
+```
+### Sample recipes and resources
+```
+vi install.rb
+
+execute "apt-get update" do
+    command "apt-get update"
+end
+
+package 'tree' do
+    action :install
+end
+
+run the recipe locally using the following command:
+chef-apply install.rb
+```
+
 ### References
 ```
 - https://downloads.chef.io/

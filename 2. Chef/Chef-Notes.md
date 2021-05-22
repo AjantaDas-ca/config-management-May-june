@@ -99,12 +99,34 @@ Test Kitchen Drivers
         - chef -v
         - Naviagate to "chef-repo" and run "knife node list" or knife cookbook list"
 - Bootstrap DigitalOcean and/or AWS Nodes
+    - knife bootstrap <fqdn> -U <username> -N <nodename> --sudo
 
+    - knife bootstrap 138.68.173.255 -U root -N chef-demo-node --sudo
+    - knife bootstrap 138.68.173.255 -i ~/.ssh/private_key -U root -N chef-demo-node --sudo
 
 ```
 
+### Addiiontal Troubleshooting for SSH
 
+```
 
+passwd --> to change root password
+passwd userx --> to change password for userx
+
+SSH error: (for password based authentication)
+
+edit the following file:
+
+vi /etc/ssh/sshd_config
+
+PasswordAuthentication no
+to
+PasswordAuthentication yes
+
+Restart sshd
+systemctl restart sshd
+
+```
 
 ### References
 ```

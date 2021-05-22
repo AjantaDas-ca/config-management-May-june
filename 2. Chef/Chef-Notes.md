@@ -189,7 +189,7 @@ end
 Validation:
 - open page in web browser
 - curl localhost
-- check service status on node
+- check service status on node (systemctl status apache2)
 
 
 ```

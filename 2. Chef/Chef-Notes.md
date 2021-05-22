@@ -140,9 +140,9 @@ systemctl restart sshd
 ```
 ### Sample recipes and resources
 
-```
 **Install a Package**
 
+```
 vi install.rb
 
 execute "apt-get update" do
@@ -157,7 +157,7 @@ run the recipe locally using the following command:
 chef-apply install.rb
 ```
 
-**Apache**
+**Install and configure Apache on Ubuntu**
 ```
 1. Install apache package (apache2 or httpd)
 2. Create a sample index.html file (/var/www/html/index.html)
@@ -196,20 +196,6 @@ Validation:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-package 'apache2' do
-    action :install
-end
 
 
 ### References

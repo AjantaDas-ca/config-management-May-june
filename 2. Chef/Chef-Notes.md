@@ -50,12 +50,16 @@
 ### Sample Chef Recipe to install and configure Apache
 
 **Recipe Syntax**
+
 ```
 type 'name' do
     action :type_of_action
     attribute 'value'
 end
+```
+### Class Activity (Create a recipe and run locally on node)
 
+```
 ## Create a user
 
 user 'sk12k' do
@@ -210,7 +214,6 @@ vi apache.rb
 execute "apt-getupdate" do
   command "sudo apt-get update"
 end
-
 ## Install apache2 package
 package 'apache2' do
   action :install
@@ -231,8 +234,37 @@ Validation:
 - open page in web browser
 - curl localhost
 - check service status on node (systemctl status apache2)
+```
 
+### Class Activity (Generate "web" Cookbook on Workstation and upload on Chef server)
 
+```
+1. Create a cookbook using chef generate command
+
+chef generate cookbook <cookbookname>
+
+2. edit the recipe
+
+vi recipe/default.rb
+
+## Install Apache
+package 'apache2' do
+    action :install
+end
+
+## Start and enable Apache service
+service 'apache2' do
+    action [:start, :enable]
+end
+
+3. upload the cookbook
+knife cookbook upload <cookbookname>
+
+4. Edit node's runlist
+
+5. Run "sudo chef-client" on the node
+
+6. Validate by accessing the web page in a browser
 ```
 
 **Assignment**
@@ -246,6 +278,7 @@ Validation:
 - https://downloads.chef.io/
 - https://kitchen.ci/docs/getting-started/introduction/
 - https://community.chef.io/tools/chef-inspec/
+- https://docs.chef.io/resources/
 
 
 ```

@@ -12,8 +12,9 @@
 - [x] Understanding and Writing your first recipe
 - [x] Talking to Chef Server via Knife [Knife commands]
 - [x] Common Resources
-- [ ] Writing and Working with Cookbooks
-- [ ] Roles and Runlists
+- [x] Writing and Working with Cookbooks
+- [x] Roles and Runlists
+- [ ] Templates
 - [ ] Environments
 - [ ] Databags
 

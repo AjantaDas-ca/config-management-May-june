@@ -25,6 +25,10 @@
         - InSpec
         - Chef Workstation
 
+### Important files in Chef
+    - knife.rb (or config.rb)
+    - user.pem
+    - client.pem
 
 **Linux Family**
 
@@ -42,7 +46,43 @@
         - Debian
 
 
+
 ### Sample Chef Recipe to install and configure Apache
+
+**Recipe Syntax**
+```
+type 'name' do
+    action :type_of_action
+    attribute 'value'
+end
+
+## Create a user
+
+user 'sk12k' do
+  comment 'A random user'
+  uid 1234
+  home '/home/sk12k'
+  shell '/bin/bash'
+  password 'Passw0rd'
+end
+
+## Create a file on target node
+file '/tmp/info.txt' do
+  content 'This file was created using Chef local mode'
+end
+
+## Install a package
+
+package 'tree'
+
+
+## Delete/remove a user
+
+user 'sk12k' do
+  action :remove
+end
+
+```
 
 **myapacherecipe.rb**
 
@@ -105,6 +145,7 @@ Test Kitchen Drivers
     - knife bootstrap 138.68.173.255 -i ~/.ssh/private_key -U root -N chef-demo-node --sudo
 
 ```
+**Note: When you bootstrap a windows node, please open port 5985/5986 for WinRM**
 
 ### Addiiontal Troubleshooting for SSH
 

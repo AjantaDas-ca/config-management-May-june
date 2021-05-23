@@ -267,6 +267,37 @@ knife cookbook upload <cookbookname>
 6. Validate by accessing the web page in a browser
 ```
 
+
+1. Generate coobook:
+chef generate cookbook motd
+
+2. Edit default recipe:
+vi cookbooks/motd/recipes/default.rb
+
+cookbook_file "/etc/motd" do 
+    source "motd"
+    mode "0644"
+end
+
+3. Generate Source file:
+chef generate file motd
+
+4. Edit file with desired content:
+vi cookbooks/motd/files/default/motd
+
+Put the following content inside "motd" file:
+
+##########################################
+##########################################
+This Node is being managed by Chef, Don't 
+dare to make any Out-of-band changes.
+Violaters would be brought to justice!!
+##########################################
+##########################################
+
+
+5. Update the run-list/role for the node and run chef-client
+```
 **Assignment**
 
     1. Bootstrap an AWS node from Simplilearn lab to your manage.chef.io account.

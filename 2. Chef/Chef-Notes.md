@@ -284,7 +284,7 @@ end
 chef generate file motd
 
 4. Edit file with desired content:
-vi cookbooks/motd/files/default/motd
+vi cookbooks/motd/files/motd
 
 Put the following content inside "motd" file:
 

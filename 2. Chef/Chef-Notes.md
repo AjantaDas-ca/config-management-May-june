@@ -336,7 +336,6 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
 
 
 
-
 **Assignment**
 ```
 16-May-2021

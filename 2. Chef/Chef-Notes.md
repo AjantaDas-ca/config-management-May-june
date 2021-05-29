@@ -306,6 +306,19 @@ Violaters would be brought to justice!!
 
 5. Update the run-list/role for the node and run chef-client
 ```
+
+Class Activity (Bootstrap a node with pre-existing Role)
+
+```
+Create a new instance (on AWS or DO) and bootstrap with an existing role:
+
+- Bootstrapping with a role pre-assigned
+    - knife bootstrap 46.101.61.133 -U root -N chefnode1 -r 'role[new_webservers]' --sudo
+
+```
+
+
+
 **Assignment**
 ```
 16-May-2021

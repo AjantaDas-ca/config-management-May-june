@@ -327,7 +327,8 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
     b. knife environment from file ~chef-repo/environments/prod.rb
 2. Add a node to the new environment
 3. Create a new version of "web" cookbook
-    a. add new version in ~chef-repo/cookbooks/webserver/metadata.rb
+    a. Update version in ~chef-repo/cookbooks/webserver/metadata.rb from '0.1.0' to '0.2.0'
+    b. knife cookbook upload web
 4. Add constraint for cookbook in your environment
 5. Run chef-client
 6. Validate the changes

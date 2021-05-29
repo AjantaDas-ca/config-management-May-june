@@ -146,8 +146,14 @@ Test Kitchen Drivers
 - Bootstrap DigitalOcean and/or AWS Nodes
     - knife bootstrap <fqdn> -U <username> -N <nodename> --sudo
 
+- bootstrapping using password
     - knife bootstrap 138.68.173.255 -U root -N chef-demo-node --sudo
+
+- bootstrapping via passwordless authentication   
     - knife bootstrap 138.68.173.255 -i ~/.ssh/private_key -U root -N chef-demo-node --sudo
+
+- Bootstrapping with a role pre-assigned
+    - knife bootstrap 46.101.61.133 -U root -N chefnode1 -r 'role[new_webservers]' --sudo
 
 ```
 **Note: When you bootstrap a windows node, please open port 5985/5986 for WinRM**

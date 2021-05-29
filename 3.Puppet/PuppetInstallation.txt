@@ -84,6 +84,10 @@ sudo systemctl enable puppet
 
 5. Edit "/etc/puppetlabs/puppet/puppet.conf" and add the following line:
 [main]
+server = puppet
+
+
+Note: In production environments you might have to mention something like this:
 server = puppet.mycompany.com
 
 

@@ -9,6 +9,7 @@
 - Configuration Drift
 - Out-of-Band Changes
 - Desired State Configuration (Policy Files)
+- Imperative (What and How) vs Declarative (What) Languages 
 - Domain Specific Language
     - Terraform --> HCL
     - Chef --> DSL

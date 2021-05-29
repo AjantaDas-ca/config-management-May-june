@@ -301,10 +301,16 @@ Violaters would be brought to justice!!
 5. Update the run-list/role for the node and run chef-client
 ```
 **Assignment**
+```
+16-May-2021
+    1. Complete Chef Server Installation and Workstation configuration (Exercise 3.4)
+22-May-2021
+    2. Bootstrap an AWS node from Simplilearn lab to your manage.chef.io account.
 
-    1. Bootstrap an AWS node from Simplilearn lab to your manage.chef.io account.
+23-May-2021
+    3. Install and configure Puppet Cluster using the Installation document provided
 
-
+```
 
 ### References
 ```

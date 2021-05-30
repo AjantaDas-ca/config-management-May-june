@@ -36,7 +36,7 @@
 - Refer to "PuppetInstallation.txt" provided in GitHub repo if you are on AWS or DigitalOcean
 ```
 
-### Configure Local node using Puppet (puppet apply)
+**Class Activity - Configure Local node using Puppet (puppet apply)**
 ```
 ## Install a Package
 package { 'tree':

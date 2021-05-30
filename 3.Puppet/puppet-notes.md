@@ -36,12 +36,42 @@
 - Refer to "PuppetInstallation.txt" provided in GitHub repo if you are on AWS or DigitalOcean
 ```
 
+### Configure Local node using Puppet (puppet apply)
+```
+## Install a Package
+package { 'tree':
+  ensure => 'present',
+}
+
+## Create a file
+file { '/tmp/info.txt':
+  ensure  => 'present',
+  content => "This file was created using puppet",
+  mode    => '0644',
+}
+
+## Create a Directory
+file { '/tmp/infodir':
+  ensure  => 'directory',
+}
+
+## Create a user
+user { 'sk12k':
+  ensure   => 'present',
+  password => 'Pa$$w0rd',
+  home     => '/home/sk12k',
+  shell    => '/bin/bash',
+}
 
 
+```
+
+### References
+```
+- https://puppet.com/docs/puppet/6/config_file_main.html
 
 
-
-
+```
 
 
 

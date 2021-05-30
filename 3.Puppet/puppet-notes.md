@@ -46,7 +46,7 @@ package { 'tree':
 ## Create a file
 file { '/tmp/info.txt':
   ensure  => 'present',
-  content => "This file was created using puppet",
+  content => "This file was created using puppet on ${::fqdn}\n",
   mode    => '0644',
 }
 

@@ -14,9 +14,10 @@
 - [x] Common Resources
 - [x] Writing and Working with Cookbooks
 - [x] Roles and Runlists
-- [ ] Templates
-- [ ] Environments
-- [ ] Databags
+- [x] Templates
+- [x] Environments
+- [x] Databags
+- [x] Chef Supermarket
 
 
 ### Chef EcoSystem
@@ -190,6 +191,17 @@ systemctl restart sshd
 - network configuration
 - server patching and maintenance
 ```
+
+### Common Chef Resources
+```
+- package
+- service
+- file
+- cookbook_file
+- windows_package
+- template
+
+
 ### Sample recipes and resources
 
 **Install a Package**
@@ -347,6 +359,11 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
 23-May-2021
     3. Install and configure Puppet Cluster using the Installation document provided
 
+29-May-2021
+    4. template
+    5. databags
+    6. supermarket
+
 ```
 
 ### References
@@ -355,6 +372,10 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
 - https://kitchen.ci/docs/getting-started/introduction/
 - https://community.chef.io/tools/chef-inspec/
 - https://docs.chef.io/resources/
-
+- learn.chef.io
+- https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/course/
+- https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/
+- https://www.verisign.com/en_US/website-presence/online/how-dns-works/index.xhtml
+- 
 
 ```

@@ -71,11 +71,35 @@ user { 'sk12k':
 
 ```
 **site.pp and init.pp**
-```
-
 
 ```
+Site.pp example
 
+node default {
+  For all nodes in the environment
+}
+
+node <nodeX> {
+  applicable for nodeX
+}
+
+node webserver {
+  applicable for all webservers
+}
+
+node dbservers {
+  applicable for all db servers
+}
+
+node regex {
+  applicable to all nodes fulfilling the regex
+}
+```
+
+```
+init.pp example
+
+```
 **Class Activity - Configure Local node using Puppet (puppet apply)**
 ```
 create site.pp file at the following location:

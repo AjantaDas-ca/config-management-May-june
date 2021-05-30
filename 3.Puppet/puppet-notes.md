@@ -7,10 +7,10 @@
 
 - [x] Introduction
 - [x] Puppet Server Installation
-- [ ] Node Installation and Configuration
-- [ ] Writing Simple Manifests
-- [ ] Working Locally (puppet apply)
-- [ ] Managing Nodes (Puppet agent run)
+- [x] Node Installation and Configuration
+- [x] Writing Simple Manifests
+- [x] Working Locally (puppet apply)
+- [x] Managing Nodes (Puppet agent run)
 - [ ] Create and work with Puppet Modules
 - [ ] Create a cross platform module
 - [ ] Meta Parameters and Chaining arrows
@@ -95,12 +95,15 @@ node regex {
   applicable to all nodes fulfilling the regex
 }
 ```
+webserver --> default+webserver
+dbserver --> default+dbserver
+undefined --> default
 
 ```
 init.pp example
 
 ```
-**Class Activity - Configure Local node using Puppet (puppet apply)**
+**Class Activity - Appy changes to multiple nodes using Puppet Agent**
 ```
 create site.pp file at the following location:
 /etc/puppetlabs/code/environments/production/manifests

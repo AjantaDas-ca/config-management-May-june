@@ -30,6 +30,14 @@
     - Agent applies the changes to the node as per the catalogue
     - Agent sends the updated report to Puppet Server
 
+**Class Activity - Install and configure 1 or 3 node Puppet cluster**
+```
+- Refer to Class Activity 6.5 if you are on Simplilearn Lab
+- Refer to "PuppetInstallation.txt" provided in GitHub repo if you are on AWS or DigitalOcean
+```
+
+
+
 
 
 

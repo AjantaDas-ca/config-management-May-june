@@ -63,6 +63,11 @@ user { 'sk12k':
   shell    => '/bin/bash',
 }
 
+- Save the file with .pp extension
+- run the file using the following command:
+    puppet apply <filename.pp>
+
+- validate the changes
 
 ```
 

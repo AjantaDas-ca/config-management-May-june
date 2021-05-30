@@ -70,6 +70,49 @@ user { 'sk12k':
 - validate the changes
 
 ```
+**site.pp and init.pp**
+```
+
+
+```
+
+**Class Activity - Configure Local node using Puppet (puppet apply)**
+```
+create site.pp file at the following location:
+/etc/puppetlabs/code/environments/production/manifests
+
+vi site.pp
+
+node default {
+    ## Install a Package
+    package { 'tree':
+      ensure => 'present',
+    }
+
+    ## Create a file
+    file { '/tmp/info.txt':
+      ensure  => 'present',
+      content => "This file was created using puppet on ${::fqdn}\n",
+      mode    => '0644',
+    }
+
+    ## Create a Directory
+    file { '/tmp/infodir':
+      ensure  => 'directory',
+    }
+
+    ## Create a user
+    user { 'sk12k':
+      ensure   => 'present',
+      password => 'Pa$$w0rd',
+      home     => '/home/sk12k',
+      shell    => '/bin/bash',
+    }
+}
+
+- Apply the changes to nodes via "puppet agent -t"
+- validate the changes
+```
 
 ### References
 ```

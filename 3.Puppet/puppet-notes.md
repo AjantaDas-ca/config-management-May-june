@@ -144,6 +144,10 @@ node default {
 ### References
 ```
 - https://puppet.com/docs/puppet/6/config_file_main.html
+- https://www.puppetcookbook.com/
+- https://puppet.com/use-cases/windows-infrastructure-automation/
+- https://learn.puppet.com/course/puppet-basics
+
 
 
 ```

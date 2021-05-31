@@ -348,8 +348,8 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
 
 
 
-
 **Assignment**
+
 ```
 16-May-2021
     1. Complete Chef Server Installation and Workstation configuration (Exercise 3.4)

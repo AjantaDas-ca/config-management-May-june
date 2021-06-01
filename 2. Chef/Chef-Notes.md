@@ -48,7 +48,6 @@
         - Debian
 
 
-
 ### Sample Chef Recipe to install and configure Apache
 
 **Recipe Syntax**
@@ -126,10 +125,6 @@ sudo chef-server-ctl org-create sl-org "Simplilearn DevOps" --association_user s
 
 ```
 
-Test Kitchen Drivers
-- Vagrant ---> virtualbox --> 
-- 
-
 ### Get an alternate Chef environment (Class Activity)
 
 ```
@@ -200,7 +195,7 @@ systemctl restart sshd
 - cookbook_file
 - windows_package
 - template
-
+```
 
 ### Sample recipes and resources
 

@@ -385,7 +385,7 @@ Step5: Validate the changes on browser
     5. Data bags: Complete the following Assisted practice from Simplilearn LMS:
         - 5.6: Creating a Data Bag Using Knife
         - 5.7: Creating a Data Bag Manually
-    6. Chef Supermarket: Complete the following practice project from Simplilearn LMS by downloading a community cookbook from Chef Supermarket as explained in last class:
+    6. Chef Supermarket: Complete the following practice project from Simplilearn LMS by downloading a community cookbook (for nginx) from Chef Supermarket as explained in last class:
         - 4.16: Create a Chef Cookbook That Configures Nginx Web Server
 
 ```

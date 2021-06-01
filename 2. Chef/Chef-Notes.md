@@ -250,8 +250,7 @@ Validation:
 - check service status on node (systemctl status apache2)
 ```
 
-
-### Class Activity (Generate "web" Cookbook on Workstation and upload on Chef server)
+**Class Activity (Generate "web" Cookbook on Workstation and upload on Chef server)**
 ```
 1. Create a cookbook using chef generate command
 
@@ -280,8 +279,7 @@ knife cookbook upload <cookbookname>
 
 6. Validate by accessing the web page in a browser
 ```
-
-### Class Activity (Create "motd" Cookbook and work with cookbook_file resource)
+**Class Activity (Create "motd" Cookbook and work with cookbook_file resource)**
 ```
 1. Generate coobook:
 chef generate cookbook motd
@@ -309,7 +307,6 @@ dare to make any Out-of-band changes.
 Violaters would be brought to justice!!
 ##########################################
 ##########################################
-
 
 5. Update the run-list/role for the node and run chef-client
 ```

@@ -216,7 +216,7 @@ run the recipe locally using the following command:
 chef-apply install.rb
 ```
 
-**Install and configure Apache on Ubuntu**
+**Class Activity - 1 (Create a Recipe to install Apache on Ubuntu)**
 ```
 1. Install apache package (apache2 or httpd)
 2. Create a sample index.html file (/var/www/html/index.html)
@@ -250,7 +250,7 @@ Validation:
 - check service status on node (systemctl status apache2)
 ```
 
-**Class Activity (Generate "web" Cookbook on Workstation and upload on Chef server)**
+**Class Activity - 2 (Generate Cookbook "web" and upload on Chef server)**
 ```
 1. Create a cookbook using chef generate command
 
@@ -279,7 +279,7 @@ knife cookbook upload <cookbookname>
 
 6. Validate by accessing the web page in a browser
 ```
-**Class Activity (Create "motd" Cookbook and work with cookbook_file resource)**
+**Class Activity - 3 (Write motd file using cookbook_file resource)**
 ```
 1. Generate coobook:
 chef generate cookbook motd
@@ -311,7 +311,7 @@ Violaters would be brought to justice!!
 5. Update the run-list/role for the node and run chef-client
 ```
 
-**Class Activity (Bootstrap a node with pre-existing Role)**
+**Class Activity - 4 (Bootstrap a node with pre-existing Role)**
 
 ```
 Create a new instance (on AWS or DO) and bootstrap with an existing role:
@@ -322,8 +322,7 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
 ```
 ### Chef Environments
 
-
-**Class Activity - Working with Chef Environments**
+**Class Activity - 5 (Working with Chef Environments)**
 
 ```
 1. Create a new environment using rb file method
@@ -338,7 +337,37 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
 6. Validate the changes
 ```
 
+### Chef Templates
 
+**Class Activity - 6 (Working with Template resource)**
+```
+Step 1: Create a template resource
+
+template '/var/www/html/index.html' do
+    source 'index.html.erb'
+    variables(
+        fqdn: node['fqdn']
+    )
+    mode '0755'
+    action :create
+end
+
+Step2: Create index.html.erb file
+
+vi cookbooks/web/templates/index.html.erb
+
+<html>
+    <body>
+        <h1>Hello Chef world from <%= @fqdn %> </h1>
+    </body>
+</html>
+
+Step3: upload cookbook
+
+Step4: sudo chef-client (on node)
+
+Step5: Validate the changes on browser
+```
 
 **Assignment**
 
@@ -352,8 +381,8 @@ Create a new instance (on AWS or DO) and bootstrap with an existing role:
     3. Install and configure Puppet Cluster using the Installation document provided
 
 29-May-2021
-    4. template
-    5. databags
+    4. Chef Templates: Complete Class Activity - 6 (Working with Template resource)
+    5. Data bags: 
     6. supermarket
 
 ```

@@ -30,13 +30,13 @@
     - Agent applies the changes to the node as per the catalogue
     - Agent sends the updated report to Puppet Server
 
-**Class Activity - Install and configure 1 or 3 node Puppet cluster**
+**Class Activity - 1 (Install and configure 1 or 3 node Puppet cluster)**
 ```
 - Refer to Class Activity 6.5 if you are on Simplilearn Lab
 - Refer to "PuppetInstallation.txt" provided in GitHub repo if you are on AWS or DigitalOcean
 ```
 
-**Class Activity - Configure Local node using Puppet (puppet apply)**
+**Class Activity - 2 (Configure Local node using Puppet (puppet apply))**
 ```
 ## Install a Package
 package { 'tree':
@@ -103,7 +103,7 @@ undefined --> default
 init.pp example
 
 ```
-**Class Activity - Appy changes to multiple nodes using Puppet Agent**
+**Class Activity - 3 (Apply changes to multiple nodes using 'Puppet Agent')**
 ```
 create site.pp file at the following location:
 /etc/puppetlabs/code/environments/production/manifests
@@ -139,6 +139,19 @@ node default {
 
 - Apply the changes to nodes via "puppet agent -t"
 - validate the changes
+```
+
+### Assignments:
+```
+30-May-2021
+  Complete the following exercises from Simplilearn LMS
+    1. 6.5: Installing and Setting up Puppet on Ubuntu
+    2. 6.9: Writing a Puppet Manifest
+    3. 7.3: View Pre-Defined Puppet Resources
+    4. 7.4: Create and Remove the Puppet Resources
+    
+
+
 ```
 
 ### References

@@ -167,7 +167,7 @@ Note: You will be asked multiple questions regarding module metadata. Answer app
 pdk new class install
 
 2. Edite the manifest file
-vi manifests/install.pp
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/install.pp
 
 class webconfig::install {
   package { 'install_apache':
@@ -183,7 +183,7 @@ puppet parser validate manifests/install.pp
 pdk new class webconfig
 
 5. edit init.pp file
-vi manifests/init.pp
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/init.pp
 
 class webconfig {
   contain webconfig::install

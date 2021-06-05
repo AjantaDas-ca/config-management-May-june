@@ -20,6 +20,9 @@
 
 ### keywords
 - Bolt --> Push mode for Puppet
+- Apache 2.0 / MIT --> Open Source (Examples: Linux and Git)
+- Open Source != Free
+
 
 **Anatomy of Puppet Agent run**
     
@@ -139,6 +142,21 @@ node default {
 
 - Apply the changes to nodes via "puppet agent -t"
 - validate the changes
+```
+
+### Working with Puppet Modules
+```
+## Install PDK (Puppet development Kit)
+apt-get update
+apt-get install pdk -y
+pdk --version
+
+## Create a new Module
+cd /etc/puppetlabs/code/environments/production/modules
+pdk new module <module_name>
+pdk new module webconfig
+
+
 ```
 
 ### Assignments:

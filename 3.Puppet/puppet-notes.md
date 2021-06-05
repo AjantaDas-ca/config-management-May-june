@@ -14,7 +14,7 @@
 - [x] Create and work with Puppet Modules
 - [x] Create a cross platform module
 - [x] Managing files in Puppet
-- [ ] Meta Parameters and Chaining arrows
+- [x] Meta Parameters and Chaining arrows
 - [ ] Working with Modules from Puppet Forge
 
 

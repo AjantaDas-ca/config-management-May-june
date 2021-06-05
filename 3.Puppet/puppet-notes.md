@@ -223,6 +223,41 @@ class webconfig::install {
    }
 }
 ```
+
+**Class Activity - 7 (Managing files using Puppet)**
+```
+1. Create Config Class
+pdk new class config
+
+2. edit config.pp file
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/manifests/config.pp
+
+class webconfig::config {
+  file {'/var/www/html/index.html':
+    ensure  => 'file',
+    mode    => '0644',
+    source  => 'puppet:///modules/webconfig/index.html',
+  }
+}
+
+3. create source file in "files" directory of the module
+
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/files/index.html
+
+4. Call the config manifest from init.pp
+
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/manifests/init.pp
+
+class webconfig {
+  contain webconfig::install
+  contain webconfig::config
+}
+
+5. Run Puppet agent on nodes
+
+6. validate the changes on Web browser (or using curl command)
+```
+
 ### Assignments:
 ```
 30-May-2021

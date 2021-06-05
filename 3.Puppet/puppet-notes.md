@@ -164,10 +164,11 @@ Note: You will be asked multiple questions regarding module metadata. Answer app
 **Class Activity - 5 (Create install class, update site.pp and run puppet agent)**
 ```
 1. Create install class
+cd /etc/puppetlabs/code/environments/production/modules/webconfig
 pdk new class install
 
 2. Edite the manifest file
-vi /etc/puppetlabs/code/environments/production/modules/webconfig/install.pp
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/manifests/install.pp
 
 class webconfig::install {
   package { 'install_apache':
@@ -183,7 +184,7 @@ puppet parser validate manifests/install.pp
 pdk new class webconfig
 
 5. edit init.pp file
-vi /etc/puppetlabs/code/environments/production/modules/webconfig/init.pp
+vi /etc/puppetlabs/code/environments/production/modules/webconfig/manifests/init.pp
 
 class webconfig {
   contain webconfig::install

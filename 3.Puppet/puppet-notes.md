@@ -202,10 +202,26 @@ node default {
 7. Run puppet agent on the nodes
 
 8. Validate apache installation using curl command or via web browser
-
 ```
 
+**Class Activity - 6 (Create a cross platform Apache installation Module)**
 
+class webconfig::install {
+  ## Define variable for package and service name
+   $web_service = $facts['os']['family'] ? {
+     'RedHat'  => 'httpd',
+     'Debian'  => 'apache2',
+   }
+  ## Install package
+   package { $web_service:
+     ensure => 'present',
+   }
+  ## Start and enable the service
+   service { $web_service:
+     ensure => running,
+     enable => true,
+   }
+}
 ### Assignments:
 ```
 30-May-2021
@@ -216,6 +232,17 @@ node default {
     4. 7.4: Create and Remove the Puppet Resources
     
 
+generic
+/*
+multiline
+comments
+*/
+
+Ruby
+=
+multiline
+comments
+=
 
 ```
 

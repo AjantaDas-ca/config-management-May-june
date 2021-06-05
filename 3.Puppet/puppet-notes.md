@@ -157,9 +157,53 @@ pdk --version
 cd /etc/puppetlabs/code/environments/production/modules
 pdk new module <module_name>
 pdk new module webconfig
-
+Note: You will be asked multiple questions regarding module metadata. Answer appropriately and save and exit.
 
 ```
+
+**Class Activity - 5 (Create install class, update site.pp and run puppet agent)**
+```
+1. Create install class
+pdk new class install
+
+2. Edite the manifest file
+vi manifests/install.pp
+
+class webconfig::install {
+  package { 'install_apache':
+    name   => 'apache2',
+    ensure => 'present',
+  }
+}
+
+3. Check syntactical error
+puppet parser validate manifests/install.pp
+
+4. create init.pp file
+pdk new class webconfig
+
+5. edit init.pp file
+vi manifests/init.pp
+
+class webconfig {
+  contain webconfig::install
+}
+
+save init.pp file and exit.
+
+6. Edit the site.pp file to call the module
+vi /etc/puppetlabs/code/environments/production/manifests/site.pp
+
+node default {
+  include webconfig
+}
+
+7. Run puppet agent on the nodes
+
+8. Validate apache installation using curl command or via web browser
+
+```
+
 
 ### Assignments:
 ```

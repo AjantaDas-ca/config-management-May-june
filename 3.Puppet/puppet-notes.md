@@ -13,8 +13,8 @@
 - [x] Managing Nodes (Puppet agent run)
 - [x] Create and work with Puppet Modules
 - [x] Create a cross platform module
+- [x] Managing files in Puppet
 - [ ] Meta Parameters and Chaining arrows
-- [ ] Managing files in Puppet
 - [ ] Working with Modules from Puppet Forge
 
 
@@ -257,6 +257,66 @@ class webconfig {
 
 6. validate the changes on Web browser (or using curl command)
 ```
+
+### Meta Parameters and Chaining Arrows
+```
+- before
+- require
+- notify
+- subscribe
+- '->'
+- '~>'
+```
+**Example Manifest for Meta-Parameters**
+```
+  ## Install package
+  package { 'web':
+     name  => $web_service,
+     ensure => 'present',
+     before => File['/var/www/html/index.html']
+  }
+  
+  ## Start and enable the service
+  service { 'web':
+     name => $web_service,
+     ensure => running,
+     enable => true,
+     subscribe => File['/var/www/html/index.html']
+  }
+  
+  ## Create index.html file on nodes
+  file {'/var/www/html/index.html':
+    ensure  => 'file',
+    mode    => '0644',
+    source  => 'puppet:///modules/webconfig/index.html',
+    require => Package['apache2']
+    notify  => Service['apache2']
+  }
+```
+
+**Example Manifest for Chaining Arrows**
+```
+  ## Install package
+  package { 'web':
+     name  => $web_service,
+     ensure => 'present',
+  }
+  ## Create index.html file on nodes
+->  file {'/var/www/html/index.html':
+    ensure  => 'file',
+    mode    => '0644',
+    source  => 'puppet:///modules/webconfig/index.html',
+  }
+
+  ## Start and enable the service
+~> service { 'web':
+     name => $web_service,
+     ensure => running,
+     enable => true,
+    }
+```
+
+
 
 ### Assignments:
 ```

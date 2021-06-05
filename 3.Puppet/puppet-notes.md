@@ -11,8 +11,8 @@
 - [x] Writing Simple Manifests
 - [x] Working Locally (puppet apply)
 - [x] Managing Nodes (Puppet agent run)
-- [ ] Create and work with Puppet Modules
-- [ ] Create a cross platform module
+- [x] Create and work with Puppet Modules
+- [x] Create a cross platform module
 - [ ] Meta Parameters and Chaining arrows
 - [ ] Managing files in Puppet
 - [ ] Working with Modules from Puppet Forge

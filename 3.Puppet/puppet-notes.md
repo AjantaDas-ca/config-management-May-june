@@ -205,7 +205,7 @@ node default {
 ```
 
 **Class Activity - 6 (Create a cross platform Apache installation Module)**
-
+```
 class webconfig::install {
   ## Define variable for package and service name
    $web_service = $facts['os']['family'] ? {
@@ -222,6 +222,7 @@ class webconfig::install {
      enable => true,
    }
 }
+```
 ### Assignments:
 ```
 30-May-2021

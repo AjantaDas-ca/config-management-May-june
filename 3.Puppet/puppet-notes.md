@@ -145,6 +145,8 @@ node default {
 ```
 
 ### Working with Puppet Modules
+**Class Activity - 4 (Install PDK and create a Puppet Module)**
+
 ```
 ## Install PDK (Puppet development Kit)
 apt-get update

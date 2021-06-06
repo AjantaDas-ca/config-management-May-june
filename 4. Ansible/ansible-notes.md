@@ -96,4 +96,10 @@ c-node ansible_host=159.65.51.250
 178.62.122.74
 159.65.51.250
 ```
+**Inventory Validation**
+```
+ansible <group-name> -m ping
+
+ansible --list-hosts <group_name>
+```
 

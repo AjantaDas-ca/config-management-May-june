@@ -5,9 +5,9 @@
 
 ### Agenda
 
-- [ ] Introduction
-- [ ] Ansible controller Installation
-- [ ] ssh configuration
+- [x] Introduction
+- [x] Ansible controller Installation
+- [x] ssh configuration
 - [ ] Inventory and Host file configuration
 - [ ] Ad Hoc Commands
 - [ ] Playbooks

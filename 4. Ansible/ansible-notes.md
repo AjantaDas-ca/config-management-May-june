@@ -99,9 +99,9 @@ c-node ansible_host=159.65.51.250
 [allnodes:children]
 centos
 ubuntu
-```
-**Inventory Validation**
-```
+
+**Validation**
+
 ansible <group-name> -m ping
 
 ansible --list-hosts <group_name>

@@ -340,6 +340,7 @@ class webconfig {
 - https://puppet.com/use-cases/windows-infrastructure-automation/
 - https://learn.puppet.com/course/puppet-basics
 - https://puppet.com/docs/puppet/7/quick_start_essential_config.html
+- https://www.youtube.com/playlist?list=PLV86BgbREluX9pohlEYJ9eZrbWSBp6gET
 
 
 

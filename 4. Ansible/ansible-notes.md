@@ -78,5 +78,22 @@ sudo systemctl restart sshd
 sudo service sshd restart
 
 ```
+**Class Activity - 3 (Modifying Ansible Inventory (via /etc/ansible/hosts))**
+```
+Sample file. Please make the changes and update your local hosts file inside /etc/ansible directory.
 
+[nodes]
+u-node ansible_host=178.62.122.74
+c-node ansible_host=159.65.51.250
+
+[centos]
+159.65.51.250
+
+[ubuntu]
+178.62.122.74
+
+[webservers]
+178.62.122.74
+159.65.51.250
+```
 

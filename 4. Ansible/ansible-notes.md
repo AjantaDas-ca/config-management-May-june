@@ -95,6 +95,10 @@ c-node ansible_host=159.65.51.250
 [webservers]
 178.62.122.74
 159.65.51.250
+
+[allnodes:children]
+centos
+ubuntu
 ```
 **Inventory Validation**
 ```

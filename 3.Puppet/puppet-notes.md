@@ -145,6 +145,7 @@ node default {
 ```
 
 ### Working with Puppet Modules
+
 **Class Activity - 4 (Install PDK and create a Puppet Module)**
 
 ```
@@ -327,18 +328,8 @@ class webconfig {
     3. 7.3: View Pre-Defined Puppet Resources
     4. 7.4: Create and Remove the Puppet Resources
     
+5-June-2021
 
-generic
-/*
-multiline
-comments
-*/
-
-Ruby
-=
-multiline
-comments
-=
 
 ```
 
@@ -348,6 +339,7 @@ comments
 - https://www.puppetcookbook.com/
 - https://puppet.com/use-cases/windows-infrastructure-automation/
 - https://learn.puppet.com/course/puppet-basics
+- https://puppet.com/docs/puppet/7/quick_start_essential_config.html
 
 
 

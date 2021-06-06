@@ -15,7 +15,7 @@
 - [x] Create a cross platform module
 - [x] Managing files in Puppet
 - [x] Meta Parameters and Chaining arrows
-- [ ] Working with Modules from Puppet Forge
+- [x] Working with Modules from Puppet Forge
 
 
 ### keywords

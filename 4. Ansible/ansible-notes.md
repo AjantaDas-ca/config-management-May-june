@@ -36,14 +36,13 @@ sudo apt install ansible
 **Validation**
 ansible --version
 ```
-**Class Activity 2A (Passwordless SSH configuration)**
+## Passwordless SSH configuration between Controller and Nodes
+**Class Activity - 2A (Create a System Account)**
 ```
-## Create a System Account
 adduser ansible
 sudo usermod -aG sudo ansible (for CentOS ==> usermod -aG wheel ansible)
 visudo (to edit /etc/sudoers)
 '%sudo   ALL=(ALL:ALL) ALL'  ---> '%sudo   ALL=(ALL:ALL) NOPASSWD:ALL'
-
 ```
 
 **Class Activity 2B (Setup password-less Authentication via ssh)**

@@ -42,7 +42,11 @@ ansible --version
 adduser ansible
 sudo usermod -aG sudo ansible (for CentOS ==> usermod -aG wheel ansible)
 visudo (to edit /etc/sudoers)
-'%sudo   ALL=(ALL:ALL) ALL'  ---> '%sudo   ALL=(ALL:ALL) NOPASSWD:ALL'
+
+Change:
+'%sudo   ALL=(ALL:ALL) ALL'
+to
+'%sudo   ALL=(ALL:ALL) NOPASSWD:ALL'
 ```
 
 **Class Activity 2B (Setup password-less Authentication via ssh)**

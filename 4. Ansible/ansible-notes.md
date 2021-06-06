@@ -36,7 +36,7 @@ sudo apt install ansible
 **Validation**
 ansible --version
 ```
-## Passwordless SSH configuration between Controller and Nodes
+### Passwordless SSH configuration between Controller and Nodes
 **Class Activity - 2A (Create a System Account)**
 ```
 adduser ansible

@@ -134,10 +134,9 @@ _Additional Note: if you want to make the new inventory file persistent so that 
 ### Assignments
 ```
 6-June-2021
-  Complete the following exercises from Simplilearn LMS
     1. Setup a 3-node cluster as shown during class demo for practice.
     2. Classroom activities 1-4
-    3. 10.3: Ansible Modules
+    3. 10.3: Ansible Modules (Simplilearn LMS)
     4. Read about inventory file (Reference link)
 
 ```

@@ -107,5 +107,28 @@ ansible <group-name> -m ping
 ansible --list-hosts <group_name>
 ```
 
-**Alternate Inventory File**
+**Class Activity - 4 (Alternate Inventory File)**
+
+```
+Ansible gives you the ability to provide alternate files as inventory files and you don't always have to rely on /etc/ansible/hosts.
+
+## Create a file with node details which you want to use as alternative inventory
+1. vi /etc/ansible/webinv
+
+[newinv]
+178.62.122.74
+159.65.51.250
+
+Save the file and exit.
+
+2. run ansible commands with -i flag
+
+Syntax:
+ansible <group_name> -m <module_name> -i <inventory_file_path>
+
+Example:
+ansible newinv -m ping -i /etc/ansible/webinv
+
+Additional Note: if you want to make the new inventory file persistent so that you don't have to use the -i flag, you can change the corresponding value in the "defaults" section of main Ansible configuration file (typically '/etc/ansible/ansible.cfg')
+```
 

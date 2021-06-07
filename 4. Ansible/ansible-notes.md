@@ -8,7 +8,7 @@
 - [x] Introduction
 - [x] Ansible controller Installation
 - [x] ssh configuration
-- [ ] Inventory and Host file configuration
+- [x] Inventory and Host file configuration
 - [ ] Ad Hoc Commands
 - [ ] Playbooks
     - [ ] YAML
@@ -106,4 +106,6 @@ ansible <group-name> -m ping
 
 ansible --list-hosts <group_name>
 ```
+
+**Alternate Inventory File**
 

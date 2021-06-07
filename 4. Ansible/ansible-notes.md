@@ -128,7 +128,6 @@ ansible <group_name> -m <module_name> -i <inventory_file_path>
 
 Example:
 ansible newinv -m ping -i /etc/ansible/webinv
-
-Additional Note: if you want to make the new inventory file persistent so that you don't have to use the -i flag, you can change the corresponding value in the "defaults" section of main Ansible configuration file (typically '/etc/ansible/ansible.cfg')
 ```
+**Additional Note: if you want to make the new inventory file persistent so that you don't have to use the -i flag, you can change the corresponding value in the "defaults" section of main Ansible configuration file (typically '/etc/ansible/ansible.cfg')**
 

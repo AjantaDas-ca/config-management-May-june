@@ -132,11 +132,17 @@ ansible newinv -m ping -i /etc/ansible/webinv
 _Additional Note: if you want to make the new inventory file persistent so that you don't have to use the -i flag, you can change the corresponding value in the "defaults" section of main Ansible configuration file (typically '/etc/ansible/ansible.cfg')_
 
 ### Assignments
+```
+6-June-2021
+  Complete the following exercises from Simplilearn LMS
+    1. Setup a 3-node cluster as shown during class demo for practice.
+    2. Classroom activities 1-4
+    3. 10.3: Ansible Modules
+    4. Read about inventory file (Reference link)
 
-
-
-
+```
 
 ### References:
+- https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 - https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 - 

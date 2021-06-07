@@ -317,8 +317,6 @@ class webconfig {
     }
 ```
 
-
-
 ### Assignments:
 ```
 30-May-2021
@@ -329,10 +327,19 @@ class webconfig {
     4. 7.4: Create and Remove the Puppet Resources
     
 5-June-2021
-
-
+  - Practice the following walk-throughs on Puppet Forge documentation:
+    1. https://puppet.com/docs/puppet/7/quick_start_essential_config.html
+  - Complete the following exercises from Simplilearn LMS
+    2. 7.6: Defining a Puppet Classes
+    3. 7.10: Create a Puppet Module
+    4. 7.11: Installing Module from Command Line
+    5. 7.12: Manage Modules from Command Line
+    6. 7.13: Install PHP in Agent Node
+    7. 8.3: Installing Puppet Modules from Puppet Forge
+    8. 8.4: Publish to Puppet Forge
+    9. 8.11: Configuring hiera.yaml File
+    10. 8.12: Testing Hiera
 ```
-
 ### References
 ```
 - https://puppet.com/docs/puppet/6/config_file_main.html
@@ -341,8 +348,6 @@ class webconfig {
 - https://learn.puppet.com/course/puppet-basics
 - https://puppet.com/docs/puppet/7/quick_start_essential_config.html
 - https://www.youtube.com/playlist?list=PLV86BgbREluX9pohlEYJ9eZrbWSBp6gET
-
-
 
 ```
 

@@ -139,39 +139,39 @@ _Additional Note: if you want to make the new inventory file persistent so that 
 ### Ad Hoc Commands (ansible ---options)
 
 **check node health**
-ansible all -m ping
+    ansible all -m ping
 
 **List ansible nodes**
-ansible --list-hosts all
-ansible --list-hosts <node-group-name>
+    ansible --list-hosts all
+    ansible --list-hosts <node-group-name>
 
 **See all the facts on nodes**
-ansible all -m setup
+    ansible all -m setup
 
 **Run shell commands on nodes**
-ansible nodes -m shell -a 'ls /tmp'
+    ansible nodes -m shell -a 'ls /tmp'
 
 **Run command with sudo**
-ansible nodes -m shell -a 'fdisk -l' --become
+    ansible nodes -m shell -a 'fdisk -l' --become
 
 **Create a user**
-ansible nodes -m user -a 'name=sk12k gid=1003 uid=1003 password=123456' --become
+    ansible nodes -m user -a 'name=sk12k gid=1003 uid=1003 password=123456' --become
 
 **Install a package**
-ansible nodes -m apt -a 'name=tree state=present' --become ## For Ubuntu
-ansible nodes -m yum -a 'name=tree state=present' --become ## CentOS
-ansible nodes -m package -a 'name=tree state=present' --become ## Generic
+    ansible nodes -m apt -a 'name=tree state=present' --become ## For Ubuntu
+    ansible nodes -m yum -a 'name=tree state=present' --become ## CentOS
+    ansible nodes -m package -a 'name=tree state=present' --become ## Generic
 
 **Uninstall a package**
-ansible nodes -m package -a 'name=tree state=absent' --become ## Generic
+    ansible nodes -m package -a 'name=tree state=absent' --become ## Generic
 
 **Create a file**
-ansible nodes -m copy -a 'src=info.txt dest=/tmp/info.txt owner=root mode=0644' --become
+    ansible nodes -m copy -a 'src=info.txt dest=/tmp/info.txt owner=root mode=0644' --become
 
 
 **Start/stop a service**
-ansible nodes -m service -a 'name=<service-name> state=started' ## Start a service
-ansible nodes -m service -a 'name=<service-name> state=stopped' ## Stop a service
+    ansible nodes -m service -a 'name=<service-name> state=started' ## Start a service
+    ansible nodes -m service -a 'name=<service-name> state=stopped' ## Stop a service
 
 
 ### Assignments

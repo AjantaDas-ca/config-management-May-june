@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Run if it's Debian
+      ansible.builtin.command: mkdir /tmp/ubuntudir
+      when: ansible_facts['os_family'] == "Debian"
+
+    - name: Run if it's CentOS
+      ansible.builtin.command: mkdir /tmp/centosdir
+      when: ansible_facts['os_family'] == "RedHat"

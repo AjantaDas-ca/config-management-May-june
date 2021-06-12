@@ -1,0 +1,30 @@
+--- ## Using loop to create multiple users
+- name: Ensure users
+  hosts: nodes
+  become: yes
+  tasks:
+  - name: Ensure users are present
+    user:
+      name: "{{item}}"
+      state: present
+    loop:
+    - bob
+    - jane
+    - mary
+
+
+--- ## Using loop to install multiple packages
+- name: Install all the specified packages
+  hosts: all
+  become: yes
+  tasks:
+  - name: Ensure specified packages are installed
+    package:
+      name: "{{item}}"
+      state: present
+    loop:
+    - tree
+    - git
+    - screen
+    - elinks
+    - telnet

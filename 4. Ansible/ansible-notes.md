@@ -210,8 +210,21 @@ Run: ansible-playbook ping.yaml
 
 Run: ansible-playbook package.yaml
 ```
+**vars.yaml**
+```
+---
+- hosts: nodes
+  remote_user: ansible
+  become: yes
+  tasks:
+    - name: install the specified package at runtime
+      package:
+        name: '{{ pkg }}'
+        state: present
 
+Run: ansible-playbook vars.yaml --extra-vars "pkg=tree"
 
+```
 
 ### Assignments
 ```

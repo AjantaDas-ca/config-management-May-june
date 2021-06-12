@@ -184,7 +184,6 @@ _Additional Note: if you want to make the new inventory file persistent so that 
 
 ### Working with Ansible Playbooks (ansible-playbook ---options)
 
-ansible all -m ping  --become
 **ping.yaml**
 ```
 ---

@@ -196,6 +196,21 @@ _Additional Note: if you want to make the new inventory file persistent so that 
 
 Run: ansible-playbook ping.yaml
 ```
+**package.yaml**
+
+```
+---
+- hosts: nodes
+  remote_user: ansible
+  become: yes
+  tasks:
+    - package:
+        name: elinks
+        state: absent
+
+Run: ansible-playbook package.yaml
+```
+
 
 
 ### Assignments

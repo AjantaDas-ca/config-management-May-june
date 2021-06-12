@@ -177,11 +177,26 @@ _Additional Note: if you want to make the new inventory file persistent so that 
 
     ansible nodes -m copy -a 'src=info.txt dest=/tmp/info.txt owner=root mode=0644' --become
 
-
 **Start/stop a service**
 
     ansible nodes -m service -a 'name=<service-name> state=started' ## Start a service
     ansible nodes -m service -a 'name=<service-name> state=stopped' ## Stop a service
+
+### Working with Ansible Playbooks (ansible-playbook ---options)
+
+ansible all -m ping  --become
+**ping.yaml**
+```
+---
+- hosts: all
+  remote_user: ansible
+  become: yes
+  tasks:
+    - name: Ping all nodes in my infra
+      action: ping
+
+Run: ansible-playbook ping.yaml
+```
 
 
 ### Assignments

@@ -243,6 +243,16 @@ Run: ansible-playbook vars.yaml --extra-vars "pkg=tree"
       service: name=apache2 state=restarted
 ```
 
+**Class Activity - Create a Playbook for Apache installation on ubuntu**
+```
+Merge playbooks "apache.yaml" and "handlers.yaml" and create single playbook which does the following:
+  1. Install apache on Ubuntu
+  2. Create an Index file
+  3. Restart the service
+
+```
+
+
 ### Assignments
 ```
 6-June-2021

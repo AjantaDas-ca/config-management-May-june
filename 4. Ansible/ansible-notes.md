@@ -9,15 +9,15 @@
 - [x] Ansible controller Installation
 - [x] ssh configuration
 - [x] Inventory and Host file configuration
-- [ ] Ad Hoc Commands
-- [ ] Playbooks
-    - [ ] YAML
-    - [ ] Plays
-    - [ ] Tasks
-- [ ] Modules
-- [ ] Loops and Conditions
-- [ ] Roles
-- [ ] Galaxy
+- [x] Ad Hoc Commands
+- [x] Playbooks
+    - [x] YAML
+    - [x] Plays
+    - [x] Tasks
+- [x] Modules
+- [x] Loops and Conditions
+- [x] Roles
+- [x] Galaxy
 - [ ] Ansible for AWS
     - [ ] EC2
     - [ ] S3

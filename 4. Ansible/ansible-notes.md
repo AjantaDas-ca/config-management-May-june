@@ -251,13 +251,34 @@ Merge playbooks "apache.yaml" and "handlers.yaml" and create single playbook whi
   3. Restart the service
 
 ```
-
 **Class Activity - Work with the following Playbooks**
 ```
 - loop.yaml
 - mysql.yaml
 - node.yaml
 - apache_conditional.yaml
+```
+
+**Class Activity - Working with Ansible Roles**
+
+```
+Syntax:
+ansible-galaxy install <role_name>
+Example:
+ansible-galaxy install geerlingguy.nginx
+```
+**Use the installed role in playbook**
+```
+--- ## Nginx installation using a role from Ansible galaxy
+- name: mynginx
+  hosts: nodes
+  become: yes
+  tasks:
+    - name: install nginx modules
+      include_role:
+        name: geerlingguy.nginx
+
+Run: ansible-galaxy mynginx.yaml
 ```
 
 
@@ -268,6 +289,11 @@ Merge playbooks "apache.yaml" and "handlers.yaml" and create single playbook whi
     2. Classroom activities 1-4
     3. 10.3: Ansible Modules (Simplilearn LMS)
     4. Read about inventory file (Reference link)
+13-June-2021
+    5. Additional playbooks
+    6. Roles (ELK stack and Kubernetes)
+
+
 
 ```
 
@@ -275,3 +301,8 @@ Merge playbooks "apache.yaml" and "handlers.yaml" and create single playbook whi
 - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 - https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 - 
+
+
+
+
+fatal: [node1]: FAILED! => {"changed": false, "msg": "Unable to start service nginx: Job for nginx.service failed because the control process exited with error code.\nSee \"systemctl status nginx.service\" and \"journalctl -xe\" for details.\n"}

@@ -226,6 +226,23 @@ Run: ansible-playbook vars.yaml --extra-vars "pkg=tree"
 
 ```
 
+**Class Activity - Working with Handlers**
+```
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - name: upload index file
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+        mode: 0755
+      notify: restart apache
+  handlers:
+    - name: restart apache
+      service: name=apache2 state=restarted
+```
+
 ### Assignments
 ```
 6-June-2021

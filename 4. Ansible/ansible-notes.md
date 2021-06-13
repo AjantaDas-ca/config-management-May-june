@@ -252,6 +252,14 @@ Merge playbooks "apache.yaml" and "handlers.yaml" and create single playbook whi
 
 ```
 
+**Class Activity - Work with the following Playbooks**
+```
+- loop.yaml
+- mysql.yaml
+- node.yaml
+- apache_conditional.yaml
+```
+
 
 ### Assignments
 ```

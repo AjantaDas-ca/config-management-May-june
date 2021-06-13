@@ -300,9 +300,7 @@ Run: ansible-galaxy mynginx.yaml
 ### References:
 - https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 - https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+- https://ansible.github.io/workshops/exercises/ansible_rhel/
+- https://ansible.github.io/workshops/
 - 
 
-
-
-
-fatal: [node1]: FAILED! => {"changed": false, "msg": "Unable to start service nginx: Job for nginx.service failed because the control process exited with error code.\nSee \"systemctl status nginx.service\" and \"journalctl -xe\" for details.\n"}

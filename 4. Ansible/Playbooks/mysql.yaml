@@ -1,11 +1,13 @@
---- ## Install MySQL on Ubuntu with all db details
-
+--- 
+## Install MySQL on Ubuntu with all db details
+## Change "python-mysqldb" to "python3-mysqldb" if you are on Ubuntu 20.04
 - hosts: webservers
   become: true
   tasks:
   - name: Install MySQL
     action: apt pkg={{ item }} state=present
     with_items:
+    - python3.8
     - libmysqlclient-dev
     - python-mysqldb
     - mysql-server

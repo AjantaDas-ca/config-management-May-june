@@ -290,8 +290,16 @@ Run: ansible-galaxy mynginx.yaml
     3. 10.3: Ansible Modules (Simplilearn LMS)
     4. Read about inventory file (Reference link)
 13-June-2021
-    5. Additional playbooks
-    6. Roles (ELK stack and Kubernetes)
+    5. Additional playbooks practice
+        5A. node.yaml
+        5B. loop.yaml
+        5C. apache_conditional.yaml
+        5D. mysql.yaml
+        5E. parallelism.yaml
+        
+    6. Roles
+        6A. Install and configure ELK stack on a single node using Ansible
+        6B. Create a Single node Kubernetes cluster using Ansible
 
 
 

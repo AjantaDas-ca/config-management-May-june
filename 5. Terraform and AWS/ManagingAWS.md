@@ -49,8 +49,8 @@ vi aws_ec2.yaml
 
 ---
 plugin: aws_ec2
-aws_access_key: AKIARGOSPLBUGKCBZ2D3
-aws_secret_key: HRtQjXu0RPa4M6zTAAPLkWlNV5hiqP4/XZss4G93
+aws_access_key: <your-access-key>
+aws_secret_key: <your-secret-key>
 keyed_groups:
   - key: tags
     prefix: tag

@@ -28,6 +28,21 @@
 - ansible-playbook  ---> Work with Playbooks
 - ansible-galaxy    ---> Work with Roles
 
+### Tasks vs Plays vs Playbooks
+```
+--- ### Playbook
+- MyApp
+  - Webserver ## Play 1
+      - install apache ## Task1
+      - configure apache ## Task2 
+      - start the service ## Task3
+
+  - dbserver ## Play 2
+      - install mysql ## Task1
+      - configure mysql ## Task2
+      - start the mysql service ## Task3
+
+```
 
 ### Installation and Configuration
 

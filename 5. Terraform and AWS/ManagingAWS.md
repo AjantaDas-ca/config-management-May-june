@@ -123,6 +123,31 @@ AWS_ACCESS_KEY_ID: <your-access-key>
 AWS_SECRET_ACCESS_KEY: <your-access-key>
 AWS_REGION: <aws-region>
 ```
+
+**Terminate/stop the instances**
+
+```
+---
+- hosts: localhost
+  gather_facts: no
+  vars_files:
+    - keys.yaml
+  vars:
+    instance_ids:
+      - 'i-0973edc48fbba34a6'
+      - 'i-0b23553f11f209359'
+      - 'i-08830a8d725a0216a'
+  tasks:
+    - name: Stop_EC2_instances
+      ec2:
+        aws_access_key: "{{ AWS_ACCESS_KEY_ID }}"
+        aws_secret_key: "{{ AWS_SECRET_ACCESS_KEY }}"
+        aws_region: "{{ AWS_REGION }}"
+        instance_ids: '{{ instance_ids }}'
+        state: terminated
+   
+```
+
 ### References
 
 - https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html

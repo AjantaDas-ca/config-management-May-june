@@ -5,8 +5,8 @@
 
 - [x] Dynamic Inventory [AWS]
 - [ ] Ansible for AWS
-    - [ ] EC2
-    - [ ] S3
+    - [x] EC2
+    - [x] S3
 - [ ] Terraform
     - [ ] Introduction
     - [ ] Installation and configuration

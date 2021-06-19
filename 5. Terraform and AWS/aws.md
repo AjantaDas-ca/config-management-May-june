@@ -31,6 +31,10 @@
 - Security Groups
 - NACLs (Network ACLs)
 
+### 3 ways to connect to AWS:
+- Console (GUI) - user id + Password
+- AWS CLI (Command line) - Access key + Secret access key
+- SDK | Programmatic way - Access key + Secret access key
 ### Storage on AWS
 - Object (C:\Mymovies)
     - S3 (Buckets ~= Folder/Directory)

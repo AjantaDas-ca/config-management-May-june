@@ -3,7 +3,7 @@
 ### ###############################
 
 
-- [ ] Dynamic Inventory [AWS]
+- [x] Dynamic Inventory [AWS]
 - [ ] Ansible for AWS
     - [ ] EC2
     - [ ] S3
@@ -99,8 +99,19 @@ ansible-playbook <group-name> -i aws_ec2.yaml playbook.yaml
 - hosts: localhost
   gather_facts: no
   tasks:
-    - name 
-
+    - name: Provision_EC2
+      ec2:
+        aws_access_key: <your-access-key>
+        aws_secret_key: <your-secret-key>
+        aws_region: us-east-1
+        keypair: sk12k-us-east1
+        instance_type: t2.micro
+        image: ami-09e67e426f25ce0d7 #Ubuntu 20.04
+        wait: yes
+        vpc_subnet_id: subnet-2c626620
+        assign_public_ip: yes
+        instance_tags:
+          Name: ansible-demo
 ```
 
 

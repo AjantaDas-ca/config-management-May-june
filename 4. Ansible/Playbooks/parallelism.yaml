@@ -4,8 +4,8 @@
   become: yes
   max_fail_percentage: 1
   serial:
-  - 1
-  - "50%"
+  - 5
+  - "10%"
   tasks:
     - name: Apache on Ubuntu
       when: ansible_facts['os_family'] == "Debian"

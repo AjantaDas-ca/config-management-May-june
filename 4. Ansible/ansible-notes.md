@@ -18,6 +18,7 @@
 - [x] Loops and Conditions
 - [x] Roles
 - [x] Galaxy
+- [ ] Dynamic Inventory [AWS]
 - [ ] Ansible for AWS
     - [ ] EC2
     - [ ] S3

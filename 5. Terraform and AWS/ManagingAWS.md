@@ -21,8 +21,7 @@
 
 Terraform + Ansible
 CloudFormation + Systems Manager
-#### Class Activity - Working with Dynamic Inventory in Ansible (20 Minutes)
-
+#### Class Activity - Working with Dynamic Inventory in Ansible (30 Minutes)
 
 **Installing Boto3 botocore**
 ```
@@ -90,12 +89,7 @@ Run a Playbook on taget nodes:
 ansible-playbook <group-name> -i aws_ec2.yaml playbook.yaml
 ```
 
-
-
-
-
-
-
+#### Class Activity - Creating an EC2 instance using Ansible (20 Minutes)
 
 
 
@@ -107,7 +101,7 @@ ansible-playbook <group-name> -i aws_ec2.yaml playbook.yaml
   tasks:
     - name 
 
-
+```
 
 
 ### References

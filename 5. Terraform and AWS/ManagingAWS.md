@@ -89,9 +89,7 @@ Run a Playbook on taget nodes:
 ansible-playbook <group-name> -i aws_ec2.yaml playbook.yaml
 ```
 
-#### Class Activity - Creating an EC2 instance using Ansible (20 Minutes)
-
-
+#### Class Activity - Creating an EC2 instance using Ansible (15 Minutes)
 
 **Write a playbook to provision and EC2 instance**
 ```

@@ -21,7 +21,7 @@
 
 Terraform + Ansible
 CloudFormation + Systems Manager
-#### Dynamic Inventory
+#### Class Activity - Working with Dynamic Inventory in Ansible (20 Minutes)
 
 
 **Installing Boto3 botocore**

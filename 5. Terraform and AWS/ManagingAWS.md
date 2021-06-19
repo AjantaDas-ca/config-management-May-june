@@ -29,6 +29,8 @@ sudo apt-get install python3 -y
 
 sudo apt-get install python3-pip
 
+pip install boto
+pip install boto3
 pip install boto3
 pip3 install boto3
 ```
@@ -96,12 +98,14 @@ ansible-playbook <group-name> -i aws_ec2.yaml playbook.yaml
 ---
 - hosts: localhost
   gather_facts: no
+  vars_files:
+    - keys.yaml
   tasks:
     - name: Provision_EC2
       ec2:
-        aws_access_key: <your-access-key>
-        aws_secret_key: <your-secret-key>
-        aws_region: us-east-1
+        aws_access_key: "{{ AWS_ACCESS_KEY_ID }}"
+        aws_secret_key: "{{ AWS_SECRET_ACCESS_KEY }}"
+        aws_region: "{{ AWS_REGION }}"
         keypair: sk12k-us-east1
         instance_type: t2.micro
         image: ami-09e67e426f25ce0d7 #Ubuntu 20.04
@@ -112,7 +116,13 @@ ansible-playbook <group-name> -i aws_ec2.yaml playbook.yaml
           Name: ansible-demo
 ```
 
-
+**Create AWS credentials file for AWS**
+```
+--- # AWS Credentials for Ansible
+AWS_ACCESS_KEY_ID: <your-access-key>
+AWS_SECRET_ACCESS_KEY: <your-access-key>
+AWS_REGION: <aws-region>
+```
 ### References
 
 - https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html

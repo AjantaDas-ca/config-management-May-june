@@ -1,0 +1,214 @@
+OS
+
+1) What is the difference between Linux and Unix ?
+
+2) What's a KVM ?
+
+3) How would you make sure a service starts on an OS of your choice ?
+
+4) Here's a terminal. What flavor of Linux is running ?
+
+5) Write a command to delete all empty file under a directory.
+
+6) Kill all the procs by a particular user without using pkill
+
+7) What is Active Directory ? How do you make a server join a domain ?
+
+Networking
+
+What is the difference between TCP and UDP ?
+What is ICMP ? Why should you block it ?
+What is IPv6 ? Why should we care ?
+In a corporate environment users from London can ping a particular server but users from New York cannot, what steps will you take to troubleshoot the problem ?
+What steps are needed to change the hostname on a Linux machine ?
+Where is the hostname file on a Windows server ?
+How is a hostname resolved on a Linux machine ?
+What's a SSL tunnel ?
+What's a SDN ?
+
+Scripting 
+
+(questions here vary on rating and depend pretty much on telling the person to write a short script)
+
+What is your favorite scripting language ? Why ?
+What are design patterns ?
+Describe some scripts you have written/automation you have done/ programs you have written. Justify your choice of scripting language and design patterns.
+Can you port the same script to another language ? On another OS ?
+How long would it take you to learn another language ?
+
+CI/CD
+
+How would you trace a binary deployment back to the source code ? How would you structure such a build ?
+How do you manage dependencies ?
+CI can only be used to find compile time errors quickly. True/False. Explain.
+How would you structure CD for an app that depends on 3 other apps ?
+How do you plan capacity for your CI/CD servers ?
+All your built binaries should be checked in to your git/svn for quick deployment and posteriority. True/False. Explain.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. What are some examples of how you might scale a write/read-heavy application? Why?
+2. Tell me about the worst-run/best-run outage you’ve been a part of. What made it bad/well-run?
+3. How would you assess how “deployable” a system is?
+How do you know when a deployment is ready? How would you manage that deployment?
+4. How would you prepare for a migration from one platform to another?8
+5. What is the purpose of a post-mortem meeting?
+Do you know how to learn from mistakes? How do you get the most value out of post-mortems?
+6. How would you make key aspects of a software system traceable?
+7. How do you handle interruptions?
+8. How would you deploy software to 5000 systems?
+9. What different types of testing need to be carried out on a software system, and what tools would you use to achieve this testing?
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DevOps Interview Questions are:
+
+1. How does HTTP work?
+
+2. Discuss your experience building bridges between IT Ops, QA and development.
+
+3. What types of testing are needed?
+
+4. Give me an example of how you would handle projects?
+
+5. What’s your career objective in your role as a DevOps engineer?
+
+6. How would you make software deployable?
+
+7. What is the one most important thing DevOps helps do?
+
+8. What’s a PTR in DNS?
+
+9. Describe two-factor authentication?
+
+10. What is an MX record in DNS?
+
+11. What is the difference between RAID 0 and RAID 1?
+
+12. How would you ensure traceability?
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Software Delivery Questions
+
+What is Continuous Integration?
+What CI tools have you used? Example: Jenkins.
+What is Continuous Delivery and why is it important?
+What is Continuous Deployment?
+Explain the importance of A/B testing and how it relates to software delivery
+What are your favorite deployment techniques and why? Examples include: 0 downtime, Canary, or Blue/Green deployments.
+Explain a time when a software release has gone poorly
+Source Control Questions
+
+What types of source control programs are you comfortable with?
+What are the benefits of using source control?
+Describe branching strategies you have used
+Give an example of a good commit message
+
+What’s a PTR in DNS?
+What’s a MX record in DNS?
+How a CDN chooses the closest host to serve a client?
+In which cases would you choose to not implement a CDN?
+
+Testing Questions
+
+Talk about different types of automated testing you have implemented
+What is the importance of software testing?
+What testing paradigms do you use, if any?
+Explain the difference between unit and end to end testing
+Have you used any testing frameworks? If so, which ones?
+
+
+Architecture Questions
+
+Explain what a RESTful architecture is
+How would you scale a slow website?
+Your application just got millions of users overnight, what do you do?
+What are some ways to increase client-side performance?
+Can you explain the significance of a primary/replica database architecture?
+What are some caching strategies you can implement to increase performance?
+What are the advantages and disadvantages of implementing a Microservices architecture?
+What is the difference between vertical and horizontal scalability?
+
+
+General Programming Questions
+
+What languages are your most comfortable with?
+Google is your friend
+
+Database Questions
+
+What is the difference between a relational and non-relational database?
+When do we optimize the database?
+Can you give some ways to optimize the performance of a database?
+What does A.C.I.D mean?
+How can you customize the query plan to increase throughput?
+Explain how you would do Database Continuous Delivery
+
+Linux Questions
+
+How to view running processes in Linux?
+How do you check server uptime?
+How do you start/stop services?
+How do you display the shell’s environment variables?
+What adding #!/bin/bash at the top of a script do?
+What does a & after a command do?
+What does piping commands mean?
+What distributions have you used on servers?
+Difference between RAID 0, 1 and 5?
+What’s the advantage of one RAID over another?
+Alternative to init.d in Linux?
+How to view running processes in Linux?
+How to check DNS records in Linux?
+
+Security Questions
+
+What is the importance of SSL?
+What is a SQL injection?
+What is cross-site scripting (XSS)?
+Why shouldn’t you roll your own crypto?
+How are passwords stored on databases?
+What is a Man-in-the-middle attack?
+How do you safely manage environment variables in a cloud environment?
+Difference between authorization and authentication?
+Describe two-factor authentication
+
+Cloud Questions
+
+Which cloud providers are you familiar with?
+What are the benefits of using a cloud provider?
+Have you managed production systems in the past?
+
+Configuration Management Questions
+
+Which Configuration Management tools are you most comfortable with? Examples include: Chef, Salt, Puppet, or Ansible.
+
+Container Questions
+
+How does Docker improve scalability, distributed computing, and efficiency vs. traditional cloud virtual machines?
+
+List some Docker use cases
+
+Fun Questions
+
+What new technology would you like to learn?
+Have you worked on any side projects?
+Do you contribute to any open source projects?
+Summary
+
+Although you may not get asked everything in this post, it’s always good to be prepared for your next interview.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++

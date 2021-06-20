@@ -104,6 +104,7 @@ aws configure
 
 ### References:
 
-https://learn.hashicorp.com/collections/terraform/aws-get-started
+- (Terraform Get Started - AWS) [https://learn.hashicorp.com/collections/terraform/aws-get-started]
 
-blog for Terraform+Ansible usage
+- (How To Use Ansible with Terraform for Configuration Management) [https://www.digitalocean.com/community/tutorials/how-to-use-ansible-with-terraform-for-configuration-management]
+

@@ -1,6 +1,5 @@
 ### ######################
-### Project 1 
-### CI/CD Deployment Using Ansible CM Tool 
+### Project 1: CI/CD Deployment Using Ansible CM Tool 
 ### ######################
 
 **Steps to Perform:**
@@ -23,8 +22,7 @@ Jenkins ---> Ansible --> Maven build ---> war file deployment (Jenkins post buil
 ```
 
 ### ######################
-### Project 2
-### Deployment of WordPress Environment
+### Project 2: Deployment of WordPress Environment
 ### ######################
 ```
 WordPress installation and configuration with the following components:

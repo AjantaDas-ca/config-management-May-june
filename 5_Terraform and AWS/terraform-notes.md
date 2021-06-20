@@ -5,41 +5,45 @@
 
 ### Agenda
 
-- [ ] Introduction
-- [ ] Installation and configuration
-- [ ] Provisioning an EC2 instance
-- [ ] Provisioning an S3 Bucket
+- [x] Introduction
+- [x] Installation and configuration
+- [x] Provisioning an EC2 instance
+- [x] Provisioning VPC and Subnets
 
 
 ### Keywords
+```
 - IaC
 - Hashicorp (Vagrant, consul, packer, terraform)
 - Elastic Beanstalk (PaaS, Heroku)
-
+```
 ### Introduction
-
+```
 - IaC
     - Terraform
     - AWS CloudFormation
     - Azure ARM templates
     - GCP Cloud Deployment Manager
-
+```
 **IaC benefits**
+```
 - Versioning
 - Reproducible and reusable
 - Scalable
 - Auto Documented
 - Consistency (less human error)
-
+```
 **Terraform Benefits**
+```
 - Multiple Providers and provisioners
 - easy to learn HCL
-
-
+```
 **Terraform Licenses**
+```
 - Open Source
 - Pro [Enterprise]
 - Premium [Enterprise]
+```
 
 ### Class activity - Terraform Installation
 ```
@@ -57,13 +61,13 @@
 - terraform destroy [terminate_resources]
 
 ### Concepts
-
+```
 - Configuration files
 - State
 - Providers
 - Provisioners
 - Outputs
-
+```
 ### AWS CLI installation steps
 ```
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
@@ -96,7 +100,6 @@ aws configure
 - Create an EC2 instance (Windows, Ubuntu, CentOS)
 - Install and configure Apache or IIS
 ```
-
 
 
 ### References:

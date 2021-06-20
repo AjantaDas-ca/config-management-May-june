@@ -1,17 +1,13 @@
 ### ###############################
-### Managing AWS using Ansible and Terraform
+### Managing AWS using Ansible
 ### ###############################
 
 
 - [x] Dynamic Inventory [AWS]
-- [ ] Ansible for AWS
+- [x] Ansible for AWS
     - [x] EC2
     - [x] S3
-- [ ] Terraform
-    - [ ] Introduction
-    - [ ] Installation and configuration
-    - [ ] Provisioning an EC2 instance
-    - [ ] Provisioning an S3 Bucket
+
 
 
 ### Keywords

@@ -49,7 +49,15 @@
 - terraform -v
 ```
 
+**Terraform Workflow**
+
+- terraform init  [Initialize_your_environment]
+- terraform plan [Dry_run]
+- terraform apply [Provision]
+- terraform destroy [terminate_resources]
+
 ### Concepts
+
 
 - Configuration files
 - State
@@ -57,6 +65,8 @@
 - Provisioners
 - Outputs
 
+
+### Configuration files
 
 
 

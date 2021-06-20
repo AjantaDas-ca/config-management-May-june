@@ -1,0 +1,40 @@
+
+
+
+sudo apt-get install python3-pip
+sudo apt-get install python-pip
+
+pip install boto3
+pip3 install boto3
+
+
+AWS Account
+    ---> VPCs (CIDR)
+        ---> Subnets (CIDR)
+            ---> Instances (or other resources)
+
+
+VLAN ~= Subnets
+
+
+### Agenda for today
+
+- Terraform
+- Project discussion
+- Interview preparations questions
+- Sample CVs
+- AWS Certifications preparations
+- Puppet GUI DOc to be put in GitHub repo
+
+
+
+
+### Videos and references
+- Puppet GUI
+- Puppet Heira
+- Ansible Vaults
+- Terraform vault
+
+
+
+

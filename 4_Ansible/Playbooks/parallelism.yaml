@@ -1,0 +1,28 @@
+--- ## Serial execution examples in Ansible
+
+- hosts: all
+  become: yes
+  max_fail_percentage: 1
+  serial:
+  - 5
+  - "10%"
+  tasks:
+    - name: Apache on Ubuntu
+      when: ansible_facts['os_family'] == "Debian"
+      package:
+        name: apache2
+        state: present
+
+    - name: Apache on CentOS
+      when: ansible_facts['os_family'] == "RedHat"
+      package:
+        name: httpd
+        state: present
+
+
+## max_fail_percentage -> put values in integer or percentage
+## serial: 1
+## or
+## serial:
+## - 10
+## - "20%"
